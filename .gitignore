@@ -1,0 +1,9 @@
+*~
+*.nogit
+.#*
+*.pyc
+__pycache__
+*.bak
+*.bck
+*-cache.lib
+*.kicad_pcb-bak
