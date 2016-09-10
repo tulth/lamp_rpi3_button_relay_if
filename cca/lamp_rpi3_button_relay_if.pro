@@ -66,6 +66,7 @@ LibName36=t_power
 LibName37=t_relay
 LibName38=t_res
 LibName39=t_sensor
-LibName40=t_transistor
+LibName40=t_switch
+LibName41=t_transistor
 [general]
 version=1
