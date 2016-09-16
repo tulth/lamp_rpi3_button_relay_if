@@ -1,0 +1,10 @@
+[Unit]
+Description=Lamp Control
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /opt/lamp_control/lamp_control.py
+
+[Install]
+WantedBy=multi-user.target
