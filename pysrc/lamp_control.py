@@ -54,7 +54,7 @@ class LampControl(object):
     def relayState(self, val):
         self._relayState = val
         GPIO.output(RELAY_OUT_PIN, self._relayState)
-        self.publish(self.statusTopic, payload=str(int(self._relayState)), retain=True, qos=1)
+        self._mqttc.publish(self.statusTopic, payload=str(int(self._relayState)), retain=True, qos=1)
 
     def toggle(self, channel):
         print("Falling edge detected. Toggling state")
